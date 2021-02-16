@@ -1,0 +1,19 @@
+server:
+  port: 8001
+
+# spring
+spring:
+  application:
+    name: provider-test
+
+# eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/, http://localhost:7002/eureka/, http://localhost:7003/eureka/
+  instance:
+    instance-id: service-provider-test-dev-8001
+
+# info
+info:
+  app.name: service-provider-test-8001
